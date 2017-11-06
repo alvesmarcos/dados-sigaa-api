@@ -1,6 +1,7 @@
 require 'sinatra'
 require 'sinatra/contrib'
 require './controllers/curso'
+require './controllers/centro'
 
 # set content type response application
 before do
@@ -19,6 +20,21 @@ namespace '/api/v1' do
   
   get '/cursos/:id' do |id|
     response = curso_controller.show(id)
+    body response[:body]
+    status response[:status]
+  end
+
+  # routes centros
+  centro_controller = CentroController.new
+
+  get '/centros' do
+    response = centro_controller.index
+    body response[:body]
+    status response[:status]
+  end
+
+  get '/centros/:id' do |id|
+    response = centro_controller.show(id)
     body response[:body]
     status response[:status]
   end
