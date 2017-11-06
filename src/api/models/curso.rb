@@ -1,5 +1,4 @@
 class Curso
-  DB = ''
   attr_accessor :id, :nome, :nivel, :centro, :modalidade
 
   def initialize(id='', nome='', nivel='', centro='', modalidade='')
