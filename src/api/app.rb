@@ -26,7 +26,7 @@ end
 
 # root
 get '/' do
-  response =  { :status => 200, :body => { "API": "dados-sigaa-api", "version": "0.0.1" }.to_json }
+  response = { :status => 200, :body => { "API": "dados-sigaa-api", "version": "0.0.1" }.to_json }
   body response[:body]
   status response[:status]
 end

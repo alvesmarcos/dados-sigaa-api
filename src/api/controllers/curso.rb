@@ -2,7 +2,7 @@ require 'json'
 
 class CursoController
   def initialize
-    @file = IO.read('../db/mockup/cursos.json')
+    @file = IO.read('../../db/data/cursos.json')
     @arr = JSON.parse(@file)
   end
 
