@@ -1,7 +1,7 @@
 require 'sinatra'
 require 'sinatra/contrib'
-require './controllers/curso'
-require './controllers/centro'
+require './src/api/controllers/curso'
+require './src/api/controllers/centro'
 
 # set content type response application
 before do

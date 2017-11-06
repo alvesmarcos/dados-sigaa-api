@@ -2,7 +2,7 @@ require 'json'
 
 class CentroController
   def initialize
-    @file = IO.read('../../db/data/centros.json')
+    @file = IO.read('./db/data/centros.json')
     @arr = JSON.parse(@file)
   end
 
