@@ -3,8 +3,12 @@ GEM
   specs:
     backports (3.10.3)
     json (2.1.0)
+    mini_portile2 (2.3.0)
     multi_json (1.12.2)
+    multi_xml (0.6.0)
     mustermann (1.0.1)
+    nokogiri (1.8.1)
+      mini_portile2 (~> 2.3.0)
     rack (2.0.3)
     rack-protection (2.0.0)
       rack
@@ -27,6 +31,7 @@ PLATFORMS
 
 DEPENDENCIES
   json
+  nokogiri
   sinatra
   sinatra-contrib
 
