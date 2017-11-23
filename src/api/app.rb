@@ -1,7 +1,12 @@
 require 'sinatra'
 require 'sinatra/contrib'
+require 'sinatra/cross_origin'
 require './src/api/controllers/curso'
 require './src/api/controllers/centro'
+
+configure do
+  enable :cross_origin
+end
 
 # set content type response application
 before do
