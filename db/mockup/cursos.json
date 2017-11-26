@@ -4,6 +4,15 @@
     "nome": "CIÊNCIA DA COMPUTAÇÃO (BACHARELADO)/CI - João Pessoa(João Pessoa)",
     "nivel": "GRADUAÇÃO",
     "centro": "CENTRO DE INFORMÁTICA (CI) - CI",
-    "modalidade": "Presencial"
+    "modalidade": "Presencial",
+    "disciplinas": [
+      { 
+        "id": "1101168",
+        "nome":"FISICA APLICADA A COMPUTACAO II",
+        "natureza":"Optativa",
+        "creditos":"6CR",
+        "cargaHoraria": "90CH"
+      }
+    ]
   }
 ]
