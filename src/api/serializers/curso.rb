@@ -1,3 +1,5 @@
+require '../api/serializers/disciplina'
+
 class CursoSerializer
   def initialize(curso)
     @curso = curso
@@ -9,7 +11,8 @@ class CursoSerializer
       "nome": @curso.nome,
       "nivel": @curso.nivel,
       "centro": @curso.centro,
-      "modalidade": @curso.modalidade
+      "modalidade": @curso.modalidade,
+      "disciplinas": @curso.disciplinas.map {|d| DisciplinaSerializer.new(d).as_json }
     }
     data
   end
