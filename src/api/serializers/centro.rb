@@ -7,7 +7,8 @@ class CentroSerializer
     data = {
       "id": @centro.id,
       "nome": @centro.nome,
-      "cursos": @centro.cursos
+      "cursos": @centro.cursos,
+      "departamentos": @centro.departamentos
     }
     data
   end
